@@ -1,0 +1,529 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.11.0',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'breakthrough-action',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: '10-lives-10-stories-ba',
+            issueAliasSlug: 'shared-agenda-for-social-and-behavior-change-1-1-1-1',
+            issue: {"id":617339,"projectId":87267,"slug":"experience-62595458e36cd","name":"10 Lives, 10 Stories Working-vf","status":"published","creationDate":"2022-04-15T11:17:44.000Z","lastModifiedDate":"2022-08-18T17:33:39.000Z","deletionDate":null,"firstPublishedDate":"2022-04-15T12:51:13.000Z","wipExperienceVersionId":2353601,"publishedExperienceVersionId":2597843,"createdByMemberId":22175,"primaryIssueAliasId":855852,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/breakthrough-action\/studio-thumbnails\/page-6259545811db5.jpg","importLinkShared":0,"lastPublishedDate":"2022-08-18T17:34:14.000Z","lastModifiedByMemberId":22175,"lastPublishedByMemberId":22175,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"62595458-c95875a42947c","title":"10 Lives, 10 Stories Working-vf"},
+            docVersion: {"id":2597843,"experienceId":617339,"slug":"experience-version-62fe78167a6ce","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/breakthrough-action\/doc-version-json\/v11\/experience-version-62fe78167a6ce.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/breakthrough-action\/pages\/page-62fe78167a70e","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/breakthrough-action\/page-thumbnails\/2022\/08\/18\/77c9f09cc6682fe6660b054edb378902\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"}],"cdeExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/breakthrough-action\/issue-export\/experience-62595458e36cd-08-18-2022-1734.cde","exportAppVersion":"8.10.6","creationDate":"2022-08-18T17:34:14.000Z","modificationDate":"2023-09-06T18:53:37.000Z","publishedDate":"2022-08-18T17:34:14.000Z","committedByMemberId":22175,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/breakthrough-action\/issue-export\/experience-62595458e36cd-08-18-2022-1734.tar.gz","pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"paragraph","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":"device-type","maxTabletWidthBreakpoint":1280,"maxMobileWidthBreakpoint":800,"deviceTypeMissingVariantFallback":"desktop"},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":0,"swipeEnabled":0,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|0108ad36-db43-11ea-8f81-1211e90532b6":{"familyName":"Gotham Narrow Light","familyGuid":"Uploaded|01085b59-db43-11ea-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|0108ad36-db43-11ea-8f81-1211e90532b6","variantName":"Normal","cssFamilyName":"Gotham Narrow Light-No-YGWodJR2","cssFileURL":"fonts\/3811dd5e-9924-4ed4-8f3e-2f20ea37b0c2\/gothamnarrow-light.css","api":"Uploaded","woffFileURL":null},"Uploaded|010cd2e5-db43-11ea-8f81-1211e90532b6":{"familyName":"Gotham Narrow Medium","familyGuid":"Uploaded|010c8027-db43-11ea-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|010cd2e5-db43-11ea-8f81-1211e90532b6","variantName":"Normal","cssFamilyName":"Gotham Narrow Medium-N-Df4M3w5t","cssFileURL":"fonts\/f534450b-4423-4b44-b70f-97d8080deef5\/gothamnarrow-medium.css","api":"Uploaded","woffFileURL":null},"Uploaded|01d28f20-db43-11ea-8f81-1211e90532b6":{"familyName":"Gotham Narrow Thin","familyGuid":"Uploaded|01d225e8-db43-11ea-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|01d28f20-db43-11ea-8f81-1211e90532b6","variantName":"Normal","cssFamilyName":"Gotham Narrow Thin-Nor-oNqluhUb","cssFileURL":"fonts\/b6638961-ee25-44c1-860b-e75d4a2f94eb\/gothamnarrow-thin.css","api":"Uploaded","woffFileURL":null},"Uploaded|ad9ef12f-fea2-11ea-8f81-1211e90532b6":{"familyName":"Gill Sans","familyGuid":"Uploaded|ad9e9bc1-fea2-11ea-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":682,"variantGuid":"Uploaded|ad9ef12f-fea2-11ea-8f81-1211e90532b6","variantName":"Bold","cssFamilyName":"Gill Sans-Bold-CJepJ8QJ","cssFileURL":"fonts\/728c5d69-6c3d-415c-8723-8e732a126304\/gill-sans-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|af647157-fea2-11ea-8f81-1211e90532b6":{"familyName":"Gill Sans","familyGuid":"Uploaded|ad9e9bc1-fea2-11ea-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":682,"variantGuid":"Uploaded|af647157-fea2-11ea-8f81-1211e90532b6","variantName":"Medium","cssFamilyName":"Gill Sans-Medium-E2ylQiFz","cssFileURL":"fonts\/6617ec98-2c94-4635-8f9d-b6016f49d410\/gill-sans-medium.css","api":"Uploaded","woffFileURL":null},"Uploaded|af74983a-fea2-11ea-8f81-1211e90532b6":{"familyName":"Gill Sans","familyGuid":"Uploaded|ad9e9bc1-fea2-11ea-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":682,"variantGuid":"Uploaded|af74983a-fea2-11ea-8f81-1211e90532b6","variantName":"Light","cssFamilyName":"Gill Sans-Light-RQ35fU2W","cssFileURL":"fonts\/f95efe01-b503-4255-8143-0dcad2e4c0cb\/gill-sans-light.css","api":"Uploaded","woffFileURL":null},"Uploaded|b06a2322-fea2-11ea-8f81-1211e90532b6":{"familyName":"Gill Sans","familyGuid":"Uploaded|ad9e9bc1-fea2-11ea-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":682,"variantGuid":"Uploaded|b06a2322-fea2-11ea-8f81-1211e90532b6","variantName":"Normal","cssFamilyName":"Gill Sans-Normal-u9Awin2r","cssFileURL":"fonts\/24f10406-617e-441a-8494-61391b03793f\/gill-sans.css","api":"Uploaded","woffFileURL":null},"Uploaded|dc021b1e-db42-11ea-8f81-1211e90532b6":{"familyName":"Gotham Light","familyGuid":"Uploaded|dc005984-db42-11ea-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|dc021b1e-db42-11ea-8f81-1211e90532b6","variantName":"Normal","cssFamilyName":"Gotham Light-Normal-flYwxlRB","cssFileURL":"fonts\/d086eb2f-440e-44cd-871b-272c13fa7851\/gotham-light.css","api":"Uploaded","woffFileURL":null},"Uploaded|fed5638a-db42-11ea-8f81-1211e90532b6":{"familyName":"Gotham Narrow Bold","familyGuid":"Uploaded|fed5137f-db42-11ea-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|fed5638a-db42-11ea-8f81-1211e90532b6","variantName":"Normal","cssFamilyName":"Gotham Narrow Bold-Nor-ROtL8HVU","cssFileURL":"fonts\/3018e705-a428-458d-bd53-a841429af86e\/gothamnarrow-bold.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : false,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : false,
+                swipeEnabled     : false,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":true,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":true,"Experience Sharing":true,"Open in MarkUp":true,"Create Account from Login":true},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>10 Lives, 10 Stories Working-vf</title>
+
+
+
+
+    <meta property="og:title" content="10 Lives, 10 Stories Working-vf"/>
+        <meta property="og:image" content="media/77c9f09cc6682fe6660b054edb378902/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="10 Lives, 10 Stories Working-vf">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/77c9f09cc6682fe6660b054edb378902/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-62fe78167a6ce.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_breakthrough_action_document_versions_experience_version_62fe78167a6ce",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.4db7d3e92931c63ef59e227b15148a93.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.add24733bdc1f7796d3237fb7cc28718.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/be5102502a6115fb8f643764b2db4efe/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/be5102502a6115fb8f643764b2db4efe/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Patriotic Employer Award, Pro Partia Award, 
+Above and Beyond Award
+Employer Support of the Guard and Reserve (ESGR)</p>
+<img src="media/334b6935ad511f22fb84046fea85bbfb/confetti-icon.svg" alt=""  class="image-component"/>
+<img src="media/334b6935ad511f22fb84046fea85bbfb/confetti-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Patriotic Employer Award, Pro Partia Award, Above and Beyond Award
+Employer Support of the Guard and Reserve (ESGR)</p>
+<p class="text-component">Best Places to work 
+St. Louis 
+Business Journal</p>
+<p class="text-component">2014-2020</p>
+<img src="media/334b6935ad511f22fb84046fea85bbfb/confetti-icon.svg" alt=""  class="image-component"/>
+<img src="media/334b6935ad511f22fb84046fea85bbfb/confetti-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Top Workplaces 
+The St. Louis 
+Post Dispatch</p>
+<p class="text-component">2018-2020</p>
+<img src="media/334b6935ad511f22fb84046fea85bbfb/confetti-icon.svg" alt=""  class="image-component"/>
+<img src="media/334b6935ad511f22fb84046fea85bbfb/confetti-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Top Workplace 
+Award
+Social Survey</p>
+<p class="text-component">2018</p>
+<img src="media/334b6935ad511f22fb84046fea85bbfb/confetti-icon.svg" alt=""  class="image-component"/>
+<img src="media/334b6935ad511f22fb84046fea85bbfb/confetti-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Best Mortgage 
+Companies to Work For
+National Mortgage News</p>
+<p class="text-component">2019</p>
+<img src="media/334b6935ad511f22fb84046fea85bbfb/confetti-icon.svg" alt=""  class="image-component"/>
+<img src="media/334b6935ad511f22fb84046fea85bbfb/confetti-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">SocialSurvey rating</p>
+<p class="text-component">4.9</p>
+<img src="media/334b6935ad511f22fb84046fea85bbfb/confetti-icon.svg" alt=""  class="image-component"/>
+<img src="media/334b6935ad511f22fb84046fea85bbfb/confetti-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Glassdoor rating</p>
+<p class="text-component">4.5</p>
+<img src="media/334b6935ad511f22fb84046fea85bbfb/confetti-icon.svg" alt=""  class="image-component"/>
+<img src="media/334b6935ad511f22fb84046fea85bbfb/confetti-icon.svg" alt=""  class="image-component"/>
+<img src="media/4d8355cdc8be58d716f2c7e071104038/trophy-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">10 Lives, 10 Stories, One Message was a competition to elicit and share compelling human-interest stories that demonstrate the power of social and behavior change (SBC) to improve family planning and reproductive health (FP/RH) outcomes. </p>
+<img src="media/723ec0d369fb731ac5e37743fe31c19c/gettyimages-184335539-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">A panel of judges composed of experts in SBC and reproductive health from USAID, FP2030, and Breakthrough ACTION selected ten winners whose stories were turned into videos and written briefs.</p>
+<img src="media/be5102502a6115fb8f643764b2db4efe/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/be5102502a6115fb8f643764b2db4efe/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Employee Stock Ownership Program (ESOP)</p>
+<p class="text-component">Improving SBC for service delivery</p>
+<p class="text-component">SBC is an underutilized tool for improving family planning service delivery</p>
+<p class="text-component">Video Stories</p>
+<p class="text-component">First Place Winners
+•  Grandmother Project: Change Through Culture 
+•  ZanaAfrica
+•  Pathfinder International 
+•  Abt Associates
+•  HealthRight International 
+
+Second Place Winners
+•  The Institute of Reproductive Health at Georgetown University
+•  GOAL Sierra Leone
+•  Family Planning Association of Malawi
+•  IntraHealth International 
+•  MOMENTUM Integrated Health Resilience 
+
+</p>
+<p class="text-component">The first-place winners worked with Radiant Media Collaborative to create short videos that brought their stories to life. Second-place winners worked with Breakthrough ACTION to develop stories into technical briefs that grow the body of knowledge in the field of SBC. </p>
+<p class="text-component">Focus areas of national Costed Implementation Plans (CIPs) and annual action plans </p>
+<p class="text-component">Competition Winners</p>
+<p class="text-component">Result</p>
+<img src="media/0d06ce6cc2e1aae1549fc6d881d219a6/plus-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Written Stories</p>
+<p class="text-component">•  Motivation
+•  Satisfaction
+•  Norms</p>
+<p class="text-component">We need to work together to:</p>
+<p class="text-component">Motivate demand for family planning before seeking services</p>
+<p class="text-component">1</p>
+<p class="text-component">Hover on graph to explore how SBC improves health outcomes thoughout the Circle of Care</p>
+<p class="text-component">In many cases, social change cuts across multiple health and development sectors and can serve as an opportunity to promote greater program integration</p>
+<p class="text-component">Enhance understanding of the provider perspective, including:</p>
+<p class="text-component">Better coordinate SBC and service delivery investments</p>
+<p class="text-component">Compile more evidence about effective provider behavior change approaches</p>
+<p class="text-component">Agree upon, adhere to, and report according to a uniform bank of process, output, outcome, and impact indicators, disaggregated by sex and age as necessary</p>
+<img src="media/be5102502a6115fb8f643764b2db4efe/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/be5102502a6115fb8f643764b2db4efe/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/0d06ce6cc2e1aae1549fc6d881d219a6/plus-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Strengthen the links between actors working at a variety of levels, including:</p>
+<p class="text-component">•  Individual-level behavior change
+•  Policy and structural change
+•  Norms shifting and gender 
+   transformative interventions</p>
+<p class="text-component">•  Human rights advocacy
+•  Community health</p>
+<p class="text-component">Seek consensus on a prioritized set of measurement indicators and processes to measure social change </p>
+<p class="text-component">Increase attention to ethical considerations related to shifting social and gender norms and broad social change</p>
+<p class="text-component">Apply existing social change theories to program design</p>
+<p class="text-component">Improve our capacity to identify, respond to, and measure our progress in addressing social and gender factors that impact family planning outcomes</p>
+<p class="text-component">Normative dimensions</p>
+<p class="text-component">1</p>
+<p class="text-component">Policy and structural factors</p>
+<p class="text-component">2</p>
+<p class="text-component">Social accountability</p>
+<p class="text-component">3</p>
+<p class="text-component">In many cases, social change cuts across multiple health and development sectors and can serve as an opportunity to promote greater program integration</p>
+<p class="text-component">Social change includes a mix of approaches in:  </p>
+<p class="text-component">We need to work together to:</p>
+<p class="text-component">Employee Stock Ownership Program (ESOP)</p>
+<p class="text-component">Supporting social change for family planning</p>
+<p class="text-component">Greater emphasis on social change is critical to achieving family planning goals</p>
+<p class="text-component">Seek out innovations in referral systems (e.g., mobile-based referrals) to overcome service-seeking barriers using SBC approaches.</p>
+<p class="text-component">Improve quality of care with better client experience and improved provider attitudes and behaviors </p>
+<p class="text-component">Improve the client-provider interaction during service delivery</p>
+<p class="text-component">2</p>
+<p class="text-component">Support family planning use 
+after services are received</p>
+<p class="text-component">3</p>
+<p class="text-component">Expert stakeholder consultations</p>
+<p class="text-component">Recent evidence 
+summaries</p>
+<img src="media/5ab79780769d913cd01dbd8d10b37d1e/image.svg" alt=""  class="image-component"/>
+<img src="media/c75f155b8ee805fe5fd8f877651d6265/image.svg" alt=""  class="image-component"/>
+<img src="media/be5102502a6115fb8f643764b2db4efe/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/be5102502a6115fb8f643764b2db4efe/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/0d06ce6cc2e1aae1549fc6d881d219a6/plus-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Document effective integrated programs that meet young people’s needs for positive youth development, including:</p>
+<p class="text-component">•  Meaningful employment
+•  Safety</p>
+<p class="text-component">•  A gender equitable world</p>
+<p class="text-component">Prioritize youth as a cross-cutting issue across family planning programs, rather than as a separate program discipline</p>
+<p class="text-component">Increase youth-driven SBC programs and meaningful youth engagement and partnership</p>
+<p class="text-component">Learn, in real time, what other partners are testing, what works, and what does not work</p>
+<p class="text-component">Girls under the age of 18 who give birth in 
+low- and middle-income countries every day</p>
+<p class="text-component">20k</p>
+<p class="text-component">Pregnancy and childbearing in adolescence carry significant health risks. While a majority of national Costed Implementation Plans for family planning include youth as a priority population — and many donors have made significant investments in this area — work is not always aligned and the results are not consistently shared. </p>
+<p class="text-component">Social change includes a mix of approaches in:  </p>
+<p class="text-component">We need to work together to:</p>
+<p class="text-component">Employee Stock Ownership Program (ESOP)</p>
+<p class="text-component">Understanding and meeting the needs of youth</p>
+<p class="text-component">Greater alignment and information sharing is needed to meet the family planning needs of young people</p>
+<img src="media/61fb4ac2687eb09d89fac893970ea7fa/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Improve segmentation of youth to understand their different needs, preferences and challenges, as well as behavioral patterns across the life course</p>
+<p class="text-component">Ages where pregnancy-related complications 
+are the leading cause of death among girls </p>
+<p class="text-component">15 to 19 years</p>
+<p class="text-component">3</p>
+<img src="media/be5102502a6115fb8f643764b2db4efe/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/be5102502a6115fb8f643764b2db4efe/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/0d06ce6cc2e1aae1549fc6d881d219a6/plus-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Improve understanding and appreciation of high-quality SBC, its cost-effectiveness, and its return on investment </p>
+<p class="text-component">Girls under the age of 18 who give birth in 
+low- and middle-income countries every day</p>
+<p class="text-component">20k</p>
+<p class="text-component">Current investments are insufficient, particularly at the country level, to support the implementation of high-quality SBC as a proven intervention to achieve family planning goals. Notably, many donors and governments vary in their understanding of and appreciation for SBC, leading to uneven support.</p>
+<p class="text-component">Social change includes a mix of approaches in:  </p>
+<p class="text-component">We need to work together to:</p>
+<p class="text-component">Employee Stock Ownership Program (ESOP)</p>
+<p class="text-component">Increasing coordinated investments in SBC for family planning</p>
+<p class="text-component">SBC is not yet anchored as a core element of family planning in major development organizations or in government planning mechanisms, such as Costed Implementation Plans</p>
+<img src="media/e25cb547aa53816456ee8a41e25fed39/image.svg" alt=""  class="image-component"/>
+<img src="media/01397ccc48f62e0109056898964159d9/gettyimages-904577402-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Build appreciation for SBC as an essential component of national family planning strategies </p>
+<p class="text-component">Increase use of shared measurement indicators to allow comparison of program evaluations</p>
+<p class="text-component">Make a targeted effort to improve the coordination of SBC investments to maximize existing resources</p>
+<p class="text-component">Advocate for full funding of SBC elements within Costed Implementation Plans and other national strategies </p>
+<img src="media/be5102502a6115fb8f643764b2db4efe/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/be5102502a6115fb8f643764b2db4efe/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/0d06ce6cc2e1aae1549fc6d881d219a6/plus-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Increase appreciation among governments, donors, and implementers of how investing in SBC contributes to the achievement of regional and national family planning goals</p>
+<p class="text-component">Ouagadougou Partnership countries: Benin, Burkina Faso, Côte d’Ivoire, Guinea, Mali, Mauritania, Niger, Senegal, and Togo </p>
+<p class="text-component">9</p>
+<p class="text-component">New contraceptive users between 2015 & 2018</p>
+<p class="text-component">1.4M</p>
+<p class="text-component">Social change includes a mix of approaches in:  </p>
+<p class="text-component">We need to work together to:</p>
+<p class="text-component">Employee Stock Ownership Program (ESOP)</p>
+<p class="text-component">Focusing on Francophone West Africa</p>
+<p class="text-component">The Ouagadougou Partnership countries pledged to reach 2.2 million additional family planning users by 2020, but funding is limited for demand generation</p>
+<img src="media/18a2efb3b2b8fe65c3e8095d34c49209/image-full.png" alt=""  class="image-component"/>
+<p class="text-component">Implement high-quality SBC interventions by advancing SBC technical capacity in the region</p>
+<p class="text-component">Invest in demand-side approaches, including social norms awareness and, where appropriate, norms shifting and gender transformative interventions</p>
+<p class="text-component">Increase youth-led and youth-centered SBC for family planning </p>
+<p class="text-component">Improve coordination of SBC investments and activities in the region to avoid duplication of efforts and address gaps</p>
+<p class="text-component">New users needed to reach the 2020 goals</p>
+<p class="text-component">817k</p>
+<p class="text-component">Of the Ouagadougou Partnership donor funding focuses on demand, including SBC</p>
+<p class="text-component">12%</p>
+<p class="text-component">5</p>
+<p class="text-component">4</p>
+<p class="text-component">+ Hover for more info</p>
+<p class="text-component">Written Stories </p>
+<p class="text-component">Resources</p>
+<p class="text-component">1. Rosen, J. E., Bellows, N., Bollinger, L., Plosky, W. D., & Weinberger, M. (2019). The business case for investing in social and behavior change for family planning. Washington, DC: Population Council.
+2. Huezo, C., & Diaz, S. (1993). Quality of care in family planning: clients’ rights and providers’ needs. Advances in Contraception, 9(2), 129–139. Retrieved from: https://doi.org/10.1007/BF01990143
+3. World Health Organization. (2012). Preventing early pregnancy and poor reproductive outcomes among adolescents in developing  countries: What the evidence says. Geneva, Switzerland: World Health Organization.
+4. Adding it up: Investing in contraception and maternal and newborn health in the Ouagadougou Partnership countries. (2018). Retrieved from https://www.guttmacher.org/fact-sheet/adding-it-up-contraception-mnh-ouagadougou-partnership
+5. Based on analysis by Camber Collective (2019).</p>
+<p class="text-component">+ Footnotes</p>
+<img src="media/dc19d1bd23fcd9d6eb15ec5bbefd1c9d/unicef-full.png" alt=""  class="image-component"/>
+<img src="media/bf282bd1bfeed14116ab01dd22758c7f/gates-foundation-full.png" alt=""  class="image-component"/>
+<p class="text-component">The Global Shared Agenda for SBC in Family Planning was one of three shared agendas created.</p>
+<img src="media/0d06ce6cc2e1aae1549fc6d881d219a6/plus-icon.svg" alt=""  class="image-component"/>
+<img src="media/c374543ff64bc7cdba366e8cc2ecd977/image.svg" alt=""  class="image-component"/>
+<img src="media/9a251896b010a304a352b51548f622a7/image.svg" alt=""  class="image-component"/>
+<img src="media/c2a84ae00ef57fe0472db9b9a82730c5/image.svg" alt=""  class="image-component"/>
+<img src="media/c665183737eebbd25f5a9cce654f5455/image.svg" alt=""  class="image-component"/>
+<img src="media/8620283ec30b7798ce6d9af729da5eeb/facebook.svg" alt=""  class="image-component"/>
+<img src="media/8620283ec30b7798ce6d9af729da5eeb/facebook.svg" alt=""  class="image-component"/>
+<img src="media/e60e99be3cc9bf6e5ebfe3c52402ce5b/twitter.svg" alt=""  class="image-component"/>
+<img src="media/e60e99be3cc9bf6e5ebfe3c52402ce5b/twitter.svg" alt=""  class="image-component"/>
+<img src="media/b64db72abc8d12feeaab4075d7c23d74/linkedin.svg" alt=""  class="image-component"/>
+<img src="media/b64db72abc8d12feeaab4075d7c23d74/linkedin.svg" alt=""  class="image-component"/>
+<img src="media/74dff584f2f0c2fd34c13f1064412608/mail-icon.svg" alt=""  class="image-component"/>
+<img src="media/74dff584f2f0c2fd34c13f1064412608/mail-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">•  Vivamus ac vehicula sem
+•  Praesent faucibus
+•  Acus id suscipit vestibulum
+•  Lorem mauris aliquam nisl,
+•  Vestibulum ligula nunc at tortor
+    tincidunt dui eget elit 
+•  Commodoa molestie enim 
+•  Etiam et uisque luctus lacus
+•  Tempus ligula tincidunt sit amet  
+•  Ut tincidunt ante purusat 
+    scelerisque mi cursus vel
+•  Morbi laoreet dui
+•  Acus id suscipit vestibulum</p>
+<p class="text-component">•  Morbi laoreet dui
+•  Vestibulum ligula nunc at tortor
+    tincidunt dui eget elit 
+•  Commodoa molestie enim 
+•  Etiam et uisque luctus lacus
+•  Tempus ligula tincidunt sit amet  
+ •  Scelerisque mi cursus vel
+•  Morbi laoreet dui
+•  Acus id suscipit vestibulum
+•  Lorem mauris aliquam nisl,
+•  Vestibulum ligula nunc at tortor
+•  Commodoa molestie enim 
+•  Etiam et uisque luctus lacus</p>
+<img src="media/244a796b8dec6ac3d1ac265644eeccd4/circle-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Sample Text</p>
+<img src="media/53baa8461e856ad111adb4a726c73087/circle-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Competition Winners</p>
+<img src="media/2abc20d3cff33395c024c38d65076f53/https-www-imagesofempowerment-org-wp-content-uploads-packard-pb-india-11-13-partialrelease003a-full.png" alt=""  class="image-component"/>
+<img src="media/6021e847f60ee35e0ee6e52352b2d438/https-www-imagesofempowerment-org-wp-content-uploads-1s-pa-1799312-555-scaled-full.png" alt=""  class="image-component"/>
+<p class="text-component">Competition Winners</p>
+<p class="text-component">Video Stories</p>
+<p class="text-component">Watch the extraordinary stories of the following organizations. </p>
+<p class="text-component">Georgetown University's Institute for Reproductive Health used social network approaches both to identify female and male influencers to facilitate the spread of new ideas and behaviors.</p>
+<p class="text-component">English</p>
+<p class="text-component">Español</p>
+<p class="text-component">Français</p>
+<p class="text-component">Português</p>
+<img src="media/406641d4fef4eb50734132fa3d5db0b1/screen-shot-2021-10-28-at-9-21-21-am-full.png" alt=""  class="image-component"/>
+<p class="text-component">Français</p>
+<p class="text-component">Español</p>
+<p class="text-component">English</p>
+<p class="text-component">Português</p>
+<p class="text-component">IntraHealth International used multiple complementary SBC approaches implemented by trusted health workers to improve family planning outcomes.</p>
+<p class="text-component">Français</p>
+<p class="text-component">Español</p>
+<p class="text-component">English</p>
+<p class="text-component">Português</p>
+<p class="text-component">MOMENTUM Integrated Health Resilience promoted women's empowerment and improved adolescents' access to reproductive health and family planning. </p>
+<p class="text-component">Francais</p>
+<p class="text-component">Español</p>
+<p class="text-component">English</p>
+<p class="text-component">Português</p>
+<p class="text-component">Family Planning Association of Malawi generated demand for family planning and improved adolescent reproductive health.</p>
+<p class="text-component">Français</p>
+<p class="text-component">Español</p>
+<p class="text-component">English</p>
+<p class="text-component">Português</p>
+<p class="text-component">GOAL Sierra Leone promoted positive social norms to reduce unwanted adolescent pregnancies.</p>
+<img src="media/813f452144f090c2517e3c52ba69b939/2086-sierra-leone-web-full.png" alt=""  class="image-component"/>
+<img src="media/74c5faebe522d1864575b6f40d4d34dc/mh-abgail-sitola-full.jpg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/breakthrough-action/images/2021/12/30/de0665f5fcd5db159522de0572776597/sam-and-saul-interact.JPG" alt=""  class="image-component"/>
+<img src="media/54ddf15e4ca0efa028707a0a8705eb7f/screen-shot-2021-10-06-at-11-26-30-am-full.png" alt=""  class="image-component"/>
+<p class="text-component">Français</p>
+<img src="media/269841938c9c7a54c1222d4e9ea50ca1/ten-lives-header-copy-full.png" alt=""  class="image-component"/>
+<p class="text-component">Français</p>
+<p class="text-component">Español</p>
+<p class="text-component">English</p>
+<p class="text-component">Português</p>
+<p class="text-component">Grandmother Project: Change Through Culture in Senegal used SBC to empower grandmothers to be respected change agents in their communities and advocate for their grandchildren.</p>
+<p class="text-component">Français</p>
+<p class="text-component">Español</p>
+<p class="text-component">English</p>
+<p class="text-component">Português</p>
+<p class="text-component">ZanaAfrica used community-driven, story-based SBC solutions to promote positive gender norms and reduce stigma to improve adolescent health.</p>
+<p class="text-component">Français</p>
+<p class="text-component">Español</p>
+<p class="text-component">English</p>
+<p class="text-component">Português</p>
+<p class="text-component">Pathfinder worked with influential community and religious leaders to use SBC approaches to encourage their peers to consider family planning.</p>
+<p class="text-component">Français</p>
+<p class="text-component">Español</p>
+<p class="text-component">English</p>
+<p class="text-component">Português</p>
+<p class="text-component">Abt Associates SHOPS Plus' campaign shows that meeting your audience where they're at can empower them to make informed choices.</p>
+<p class="text-component">Français</p>
+<p class="text-component">Español</p>
+<p class="text-component">English</p>
+<p class="text-component">Português</p>
+<p class="text-component">HealthRight International's work affirms that providing inclusive education and care to the most disconnected members of one's community and engaging all of its members can transform families.</p>
+<img src="media/c075ff2245a03e683b5b32b21fcd7e7e/grandmother-project-photo-full.png" alt=""  class="image-component"/>
+<img src="media/c570860905887dd37f797d2ee071a5e4/zanaafrica-photo-full.png" alt=""  class="image-component"/>
+<img src="media/6d9f5c5bba4dcc526e1d30cd7c9897a8/pathfinder-photo-full.png" alt=""  class="image-component"/>
+<img src="media/eadb11ee0307465b99ea8dcf82296755/abts-photo-full.png" alt=""  class="image-component"/>
+<img src="media/df635f65ebfdc6576730166b283450d2/healthright-international-full.png" alt=""  class="image-component"/>
+<p class="text-component">to be notified when the videos are available with French, Spanish, and Portuguese subtitles.</p>
+<p class="text-component">Sign up</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>
